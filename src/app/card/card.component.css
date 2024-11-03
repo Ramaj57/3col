@@ -1,0 +1,40 @@
+.card {
+  padding: 3rem;
+  text-align: left;
+  border-style: none;
+  width: 307px;
+  height: 500px;  
+  color: white;    
+}
+
+h1{
+  padding: 2.6rem 0;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+p{
+  margin-bottom: 5.6rem;
+  font-size: 15px;
+  
+}
+button{  
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+  
+}
+
+button,p {
+  font-family: "lexend Deca";
+  font-weight: 400;
+}
+
+@media(max-width: 480px){
+  .card{
+    width: 350px;
+  }
+
+}
