@@ -1,11 +1,5 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
-
-
-
-
-
-
 @Component({
   selector: 'app-card',
   standalone: true,
@@ -23,9 +17,17 @@ export class CardComponent {
   avatar!: string;
   @Input()
   buttonColor!: string;
+  
+  isHovered = false;
 
-  
-  
+  onMouseEnter() {
+    this.isHovered = true;
+  }
+
+  onMouseLeave() {
+    this.isHovered = false;
+  }
+
   get pathImage() {
     return 'assets/' + this.avatar; 
   }
