@@ -1,3 +1,7 @@
+app-card {
+  border-radius: 0;
+}
+
 .card {
   padding: 3rem;
   text-align: left;
@@ -40,7 +44,8 @@ button:hover{
 }
 @media(max-width: 480px){
   .card{
-    width: 350px;
+    width: 351px;
+    height: 442px;
   }
 
 }

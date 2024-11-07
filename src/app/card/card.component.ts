@@ -1,5 +1,6 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
+
 @Component({
   selector: 'app-card',
   standalone: true,

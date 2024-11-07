@@ -3,7 +3,7 @@
       <img [alt]="type" [src]="pathImage"/>
       <h1>{{ type }}</h1>
       <p>{{ description }}</p>
-      <button [ngStyle]="{'color': isHovered ? null : buttonColor}"(mouseenter)="onMouseEnter()"
+      <button [ngStyle]="{'color': isHovered ? null : buttonColor}" (mouseenter)="onMouseEnter()"
       (mouseleave)="onMouseLeave()">Learn More</button>
     </div>
 
