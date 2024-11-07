@@ -1,10 +1,8 @@
 <div class="flex-container">
   <div class="grid-container">
-    <app-card [description]="data[0].description" [type]="data[0].type"
-      [style.backgroundColor]="data[0].backgroundColor" [avatar]="data[0].avatar" [buttonColor]="data[0].buttonColor"/>
-    <app-card [description]="data[1].description" [type]="data[1].type" [avatar]="data[1].avatar"
-      [style.backgroundColor]="data[1].backgroundColor" [buttonColor]="data[1].buttonColor"/>
-    <app-card [description]="data[2].description" [type]="data[2].type"
-      [style.backgroundColor]="data[2].backgroundColor" [avatar]="data[2].avatar" [buttonColor]="data[2].buttonColor"/>
+    @for (card of data; track card.type){
+      <app-card [description]="card.description" [type]="card.type"
+      [style.backgroundColor]="card.backgroundColor" [avatar]="card.avatar" [buttonColor]="card.buttonColor"/>
+    }     
   </div>
 </div>

@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container {    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;     
     width: 921px;
@@ -25,7 +25,7 @@
 }
 
 .flex-container {
-    background-color: #F2F2F2;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@
     grid-area: 1 / 1 / 4 / 2;
     width:351px;
     height: 1326px;
-    border-top-left-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     border-bottom-left-radius: 0.5rem;
 }
 
@@ -67,7 +67,7 @@
     grid-area: 3 / 1 / 4 / 2;
     width: 351px;
     height: 442px;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-radius:0 0 0.5rem 0.5rem;
+    
 }
 }
