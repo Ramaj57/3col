@@ -36,7 +36,11 @@
     
 
 @media (max-width: 480px) {
-        .grid-container {
+    .flex-container {
+        width: 100vh;        
+    }
+
+    .grid-container {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 351px;
